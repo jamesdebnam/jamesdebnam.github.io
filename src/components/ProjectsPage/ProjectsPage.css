@@ -1,0 +1,37 @@
+.project-card {
+  background-color: #f1f3dc;
+  width: 80%;
+  margin: 1em auto;
+  border-radius: 0.4vw;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-areas:
+    "title  picture"
+    "features  picture"
+    "technologies  picture";
+}
+img {
+  grid-area: picture;
+  max-width: 40vw;
+}
+.title {
+  grid-area: title;
+}
+
+.features {
+  grid-area: features;
+}
+
+.technologies {
+  grid-area: technologies;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  overflow-y: auto;
+}
