@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Button from "../Button/Button";
 import "./HomePage.css";
 
-export default function HomePage() {
+export default function HomePage({ setActivePage }) {
   return (
     <>
       <div className="content">
@@ -15,20 +15,31 @@ export default function HomePage() {
           <Button text="My CV" />
         </Link>
         <Link to="/projects">
-          <Button text="My Projects" />
+          <Button
+            text="My Projects"
+            handleClick={() => setActivePage("projects")}
+          />
         </Link>
       </div>
       <motion.div
         animate={{ skewX: 180 }}
-        style={{ originX: 0 }}
+        transition={{ duration: 70, loop: Infinity }}
+        className="background "
+      ></motion.div>
+      <motion.div
+        animate={{ skewX: -180 }}
         transition={{ duration: 70, loop: Infinity }}
         className="background"
       ></motion.div>
       <motion.div
-        animate={{ skewX: -180 }}
-        style={{ originX: 0 }}
-        transition={{ duration: 70, loop: Infinity }}
-        className="background"
+        animate={{ skewY: -180 }}
+        transition={{ duration: 105, loop: Infinity }}
+        className="background background-y"
+      ></motion.div>
+      <motion.div
+        animate={{ skewY: 180 }}
+        transition={{ duration: 105, loop: Infinity }}
+        className="background background-y"
       ></motion.div>
     </>
   );

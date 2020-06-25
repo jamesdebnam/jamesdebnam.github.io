@@ -28,3 +28,6 @@ h3 {
   left: 0%;
   z-index: 1;
 }
+body {
+  overflow-y: hidden;
+}

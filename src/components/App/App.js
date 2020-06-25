@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 
 import "./App.css";
@@ -8,9 +8,11 @@ import HomePage from "../HomePage/HomePage";
 import ProjectsPage from "../ProjectsPage/ProjectsPage";
 
 export default function App() {
+  const [activePage, setActivePage] = useState("home");
+
   return (
     <div>
-      <Header />
+      <Header activePage={activePage} setActivePage={setActivePage} />
 
       <Switch>
         <Route path="/contact">
@@ -20,7 +22,7 @@ export default function App() {
           <ProjectsPage />
         </Route>
         <Route path="/">
-          <HomePage />
+          <HomePage setActivePage={setActivePage} />
         </Route>
       </Switch>
     </div>
