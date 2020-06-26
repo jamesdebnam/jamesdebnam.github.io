@@ -5,7 +5,7 @@ import "./Header.css";
 export default function Header({ activePage, setActivePage }) {
   return (
     <div className="header">
-      <ul>
+      <ul className="header-list">
         <Link
           to="/"
           className={activePage == "home" ? "nav nav--active" : "nav"}

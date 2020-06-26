@@ -7,7 +7,7 @@ import "./HomePage.css";
 
 export default function HomePage({ setActivePage }) {
   return (
-    <>
+    <div className="home-page">
       <div className="content">
         <h3>Frontend Web Developer</h3>
         <p>Based in South-East London</p>
@@ -41,6 +41,6 @@ export default function HomePage({ setActivePage }) {
         transition={{ duration: 105, loop: Infinity }}
         className="background background-y"
       ></motion.div>
-    </>
+    </div>
   );
 }

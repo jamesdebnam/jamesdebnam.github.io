@@ -2,29 +2,34 @@ import React from "react";
 
 import todos from "../../pictures/todos.png";
 import "./ProjectsPage.css";
+import Button from "../Button/Button";
 
 function ProjectCard({ title, features, technologies }) {
   return (
     <div className="project-card">
-      <h3 className="title">{title}</h3>
-      <div className="features">
-        <h4>Notable Features</h4>
-        <ul>
+      <h3 className="project-card__title">{title}</h3>
+      <div className="project-card__features">
+        <h4 className="project-card__subtitle">Notable Features</h4>
+        <ul className="list-item">
           {features.map((item) => (
-            <li className="feature">{item}</li>
+            <li className="project-card__feature">{item}</li>
           ))}
         </ul>
       </div>
-      <div className="technologies">
-        <h4>Technologies Used</h4>
-        <ul>
+      <div className="project-card__technologies">
+        <h4 className="project-card__subtitle">Technologies Used</h4>
+        <ul className="list-item">
           {technologies.map((item) => (
-            <li className="technology">{item}</li>
+            <li className="project-card__technology">{item}</li>
           ))}
         </ul>
       </div>
 
-      <img src={todos} alt="screenshot" />
+      <img className="screenshot" src={todos} alt="screenshot" />
+      <div className="project-card__buttons">
+        <Button className="project-card__button" text="See the code" />
+        <Button className="project-card__button" text="See the project" />
+      </div>
     </div>
   );
 }
