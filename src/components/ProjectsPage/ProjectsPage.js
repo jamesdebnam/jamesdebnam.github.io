@@ -5,7 +5,15 @@ import Button from "../Button/Button";
 import { projects } from "./projects";
 import TechStack from "../TechStack/TechStack";
 
-function ProjectCard({ title, features, technologies, image, tech }) {
+function ProjectCard({
+  title,
+  features,
+  technologies,
+  image,
+  tech,
+  codeLink,
+  projLink,
+}) {
   function setClass(technologyArr) {
     for (let item of technologyArr) {
       if (item === tech) return "project-card project-card--active";
@@ -39,8 +47,12 @@ function ProjectCard({ title, features, technologies, image, tech }) {
 
       <img className="screenshot" src={image} alt="screenshot" />
       <div className="project-card__buttons">
-        <Button className="project-card__button" text="See the code" />
-        <Button className="project-card__button" text="See the project" />
+        <a className="project-card__button" href={codeLink}>
+          <Button text="See the code" />
+        </a>
+        <a className="project-card__button" href={projLink}>
+          <Button text="See the project" />
+        </a>
       </div>
     </div>
   );
@@ -53,18 +65,25 @@ export default function ProjectsPage() {
     <>
       <TechStack setTech={setTech} tech={tech} />
       <div className="projects">
-        {projects.map(({ title, features, technologies, image }, index) => {
-          return (
-            <ProjectCard
-              title={title}
-              features={features}
-              technologies={technologies}
-              image={image}
-              key={index}
-              tech={tech}
-            />
-          );
-        })}
+        {projects.map(
+          (
+            { title, features, technologies, image, codeLink, projLink },
+            index
+          ) => {
+            return (
+              <ProjectCard
+                title={title}
+                features={features}
+                technologies={technologies}
+                image={image}
+                key={index}
+                tech={tech}
+                codeLink={codeLink}
+                projLink={projLink}
+              />
+            );
+          }
+        )}
       </div>
       <p className="footer">
         Icons taken from <a href="https://icons8.com">Icons8</a>

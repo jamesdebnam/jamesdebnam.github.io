@@ -14,6 +14,8 @@ export const projects = [
     ],
     technologies: ["React", "Redux", "Cypress", "HTML", "CSS", "JS"],
     image: todos,
+    codeLink: "https://github.com/jamesdebnam/todo",
+    projLink: "https://jamesdebnam.github.io/todo/",
   },
   {
     title: "Book Finder",
@@ -24,6 +26,8 @@ export const projects = [
     ],
     technologies: ["JS", "Node.js", "axios", "tape", "HTML", "CSS"],
     image: bookFinder,
+    codeLink: "https://github.com/jamesdebnam/book-finder",
+    projLink: "jamesdebnam.github.io/book-finder/",
   },
   {
     title: "Exchange Rate Calculator",
@@ -34,6 +38,8 @@ export const projects = [
     ],
     technologies: ["React", "Redux", "Redux-Form", "HTML", "CSS", "JS"],
     image: exchange,
+    codeLink: "https://github.com/jamesdebnam/exchange-rate-calculator",
+    projLink: "https://jamesdebnam.github.io/exchange-rate-calculator/",
   },
   {
     title: "Metronome",
@@ -43,6 +49,8 @@ export const projects = [
     ],
     technologies: ["JS", "HTML", "CSS", "Bootstrap"],
     image: metronome,
+    codeLink: "https://github.com/jamesdebnam/Metronome",
+    projLink: "https://jamesdebnam.github.io/Metronome/",
   },
   {
     title: "Calculator",
@@ -52,5 +60,7 @@ export const projects = [
     ],
     technologies: ["JS", "HTML", "CSS"],
     image: calculator,
+    codeLink: "https://github.com/jamesdebnam/Calculator",
+    projLink: "https://jamesdebnam.github.io/Calculator/",
   },
 ];
