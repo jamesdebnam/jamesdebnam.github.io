@@ -5,11 +5,10 @@
   border-radius: 0.4vw;
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-template-rows: 20% 35% 35% 10%;
+  grid-template-rows: 1fr 4.5fr 1fr;
   grid-template-areas:
     "title  picture"
-    "features  picture"
-    "technologies  picture"
+    "content  picture"
     "button  picture";
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.08),
     0 4px 4px rgba(0, 0, 0, 0.08), 0 6px 8px rgba(0, 0, 0, 0.08),
@@ -36,7 +35,7 @@
 .project-card__title {
   grid-area: title;
   font-family: "Bebas Neue", cursive;
-
+  align-self: center;
   text-align: center;
   padding: 1.5%;
   font-size: 2.2em;
@@ -47,9 +46,6 @@
   margin: 0;
 }
 
-.project-card__features {
-  grid-area: features;
-}
 .list-item {
   list-style-type: none;
   padding-left: 0.9em;
@@ -58,11 +54,12 @@
 .project-card__feature,
 .project-card__technology {
   background: url(./arrow-right.svg) no-repeat left top;
-  padding: 0.2em 0 0.1em 1.8em;
+  padding: 0.1em 1em 0.1em 1.8em;
+  justify-self: center;
 }
 
-.project-card__technologies {
-  grid-area: technologies;
+project-card__content {
+  grid-area: content;
 }
 
 .projects {
@@ -72,13 +69,16 @@
 
 .project-card__buttons {
   grid-area: button;
+  align-self: center;
   display: flex;
   justify-content: center;
 }
 
 .project-card__link {
   width: 40%;
-  margin: 0.2em 2.5% 0.8em 2.5%;
+  height: 2.1em;
+
+  margin: 0.2em 2.5% 0.2em 2.5%;
 }
 
 .project-card__btn {
@@ -93,11 +93,10 @@
 @media only screen and (max-width: 768px) {
   .project-card {
     grid-template-columns: 100%;
-    grid-template-rows: 10% 20% 20% 40% 10%;
+    grid-template-rows: 1fr 4fr 3fr 1fr;
     grid-template-areas:
       "title  "
-      "features  "
-      "technologies"
+      "content"
       "picture"
       "button ";
     width: 90%;

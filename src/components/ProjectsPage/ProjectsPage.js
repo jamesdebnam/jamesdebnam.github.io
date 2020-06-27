@@ -24,7 +24,7 @@ function ProjectCard({
   return (
     <div className={setClass(technologies)}>
       <h3 className="project-card__title">{title}</h3>
-      <div className="project-card__features">
+      <section className="project-card__content">
         <h4 className="project-card__subtitle">Notable Features</h4>
         <ul className="list-item">
           {features.map((item, index) => (
@@ -33,8 +33,6 @@ function ProjectCard({
             </li>
           ))}
         </ul>
-      </div>
-      <div className="project-card__technologies">
         <h4 className="project-card__subtitle">Technologies Used</h4>
         <ul className="list-item">
           {technologies.map((item, index) => (
@@ -43,7 +41,7 @@ function ProjectCard({
             </li>
           ))}
         </ul>
-      </div>
+      </section>
 
       <img className="screenshot" src={image} alt="screenshot" />
       <div className="project-card__buttons">

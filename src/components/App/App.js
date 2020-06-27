@@ -15,7 +15,7 @@ export default function App() {
 
   useEffect(() => {
     setActivePage(pathname);
-  }, [activePage]);
+  }, [pathname]);
 
   // Stops vertical overflow on homepage due to skew animation
   body.style.overflowY = activePage === "/" ? "hidden" : "auto";
