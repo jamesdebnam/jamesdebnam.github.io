@@ -47,11 +47,11 @@ function ProjectCard({
 
       <img className="screenshot" src={image} alt="screenshot" />
       <div className="project-card__buttons">
-        <a className="project-card__button" href={codeLink}>
-          <Button text="See the code" />
+        <a className="project-card__link" href={codeLink}>
+          <Button className="project-card__btn" text="See the code" />
         </a>
-        <a className="project-card__button" href={projLink}>
-          <Button text="See the project" />
+        <a className="project-card__link" href={projLink}>
+          <Button className="project-card__btn" text="See the project" />
         </a>
       </div>
     </div>
