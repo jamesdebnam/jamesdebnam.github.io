@@ -72,6 +72,7 @@ project-card__content {
   align-self: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 0.5em;
 }
 
 .project-card__link {

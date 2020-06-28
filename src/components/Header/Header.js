@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import { slide as Menu } from "react-burger-menu";
+import Menu from "react-burger-menu/lib/menus/slide";
 
 export default function Header({ activePage, setActivePage }) {
   return (
@@ -37,7 +37,7 @@ export default function Header({ activePage, setActivePage }) {
       >
         <h1>James Debnam</h1>
       </Link>
-      <Menu right>
+      <Menu width={"60vw"}>
         <Link
           to="/"
           className={activePage === "/" ? "nav nav--active" : "nav"}

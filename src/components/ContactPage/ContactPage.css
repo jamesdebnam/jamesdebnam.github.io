@@ -13,11 +13,12 @@
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 50%;
-
   margin: 1em auto;
   font-size: 2em;
+  flex-wrap: wrap;
+}
+.contact-list__icon {
+  margin-right: 0.5em;
 }
 
 @media only screen and (max-width: 768px) {
