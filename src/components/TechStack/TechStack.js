@@ -66,12 +66,12 @@ export default function TechStack({ tech, setTech }) {
           src={bs}
           alt="Bootstrap"
         />
-        {/* <img
+        <img
           onClick={() => setTech("Python")}
           className={setClass("Python")}
           src={py}
           alt="Python"
-        /> */}
+        />
       </div>
     </>
   );

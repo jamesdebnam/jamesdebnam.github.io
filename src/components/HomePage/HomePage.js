@@ -9,11 +9,11 @@ export default function HomePage({ setActivePage }) {
   return (
     <div className="home-page">
       <div className="content">
-        <h3>Frontend Web Developer</h3>
+        <h3>Front-end Web Developer</h3>
         <p>Based in South-East London</p>
-        <Link to="/james-debnam-cv.pdf" target="_blank" download>
+        <a href={process.env.PUBLIC_URL + "/james-debnam-cv.pdf"} download>
           <Button text="My CV" />
-        </Link>
+        </a>
         <Link to="/projects">
           <Button
             text="My Projects"

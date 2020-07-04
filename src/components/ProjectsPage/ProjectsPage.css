@@ -4,6 +4,7 @@
   margin: 1em auto;
   border-radius: 0.4vw;
   display: grid;
+  padding-bottom: 1em;
   grid-template-columns: 40% 60%;
   grid-template-rows: 1fr 4.5fr 1fr;
   grid-template-areas:
