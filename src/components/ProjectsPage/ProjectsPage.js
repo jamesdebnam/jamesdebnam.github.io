@@ -83,9 +83,6 @@ export default function ProjectsPage() {
           }
         )}
       </div>
-      <p className="footer">
-        Icons taken from <a href="https://icons8.com">Icons8</a>
-      </p>
     </>
   );
 }

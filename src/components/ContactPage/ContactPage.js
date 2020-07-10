@@ -11,7 +11,7 @@ export default function ContactPage() {
     <div className="contact-page">
       <h2 className="contact-title">Contact me</h2>
       <ul>
-        <li className="contact-list-item">
+        <li className="contact-list-item list-1">
           <img
             className="contact-list__icon__gh"
             src={github}
@@ -19,7 +19,7 @@ export default function ContactPage() {
           ></img>
           <a href="https://github.com/jamesdebnam">My GitHub</a>
         </li>
-        <li className="contact-list-item">
+        <li className="contact-list-item list-2">
           <img
             className="contact-list__icon"
             src={linkedIn}
@@ -29,11 +29,11 @@ export default function ContactPage() {
             My linkedIn
           </a>
         </li>
-        <li className="contact-list-item">
+        <li className="contact-list-item list-3">
           <img className="contact-list__icon" src={gmail} alt="Gmail"></img>
           <p>jamesdebnam@gmail.com</p>
         </li>
-        <li className="contact-list-item">
+        <li className="contact-list-item list-4">
           <img
             className="contact-list__icon"
             src={phone}

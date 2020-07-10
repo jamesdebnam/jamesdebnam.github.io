@@ -19,8 +19,26 @@
   flex-wrap: wrap;
   background-color: antiquewhite;
   border-radius: 100px;
-  animation: load 0.5s ease;
 }
+.list-1 {
+  animation: load 0.5s ease-out;
+}
+
+.list-2 {
+  animation: load 0.5s 0.2s ease-out;
+  animation-fill-mode: backwards;
+}
+
+.list-3 {
+  animation: load 0.5s 0.4s ease-out;
+  animation-fill-mode: backwards;
+}
+
+.list-4 {
+  animation: load 0.5s 0.6s ease-out;
+  animation-fill-mode: backwards;
+}
+
 .contact-list__icon {
   margin-right: 0.5em;
   max-width: 100px;
@@ -42,17 +60,26 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  .contact-page {
+    width: 95%;
+  }
   .contact-list-item {
-    width: 90%;
     font-size: 1.5em;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .contact-list__icon {
+    flex-shrink: 0;
   }
 }
 
 @keyframes load {
   0% {
-    transform: scaleX(0);
+    opacity: 0%;
+    transform: translateY(100px) scale(0.95);
   }
   100% {
-    transform: scaleX(1);
+    opacity: 100%;
+    transform: translateY(0px) scale(1);
   }
 }
