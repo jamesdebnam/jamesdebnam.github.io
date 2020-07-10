@@ -21,21 +21,21 @@
   border-radius: 100px;
 }
 .list-1 {
-  animation: load 0.5s ease-out;
+  animation: load 1s ease;
 }
 
 .list-2 {
-  animation: load 0.5s 0.2s ease-out;
+  animation: load 1s 0.2s ease;
   animation-fill-mode: backwards;
 }
 
 .list-3 {
-  animation: load 0.5s 0.4s ease-out;
+  animation: load 1s 0.4s ease;
   animation-fill-mode: backwards;
 }
 
 .list-4 {
-  animation: load 0.5s 0.6s ease-out;
+  animation: load 1s 0.6s ease;
   animation-fill-mode: backwards;
 }
 
@@ -75,11 +75,9 @@ a {
 
 @keyframes load {
   0% {
-    opacity: 0%;
-    transform: translateY(100px) scale(0.95);
+    transform: translateX(-100vw) scale(0.95);
   }
   100% {
-    opacity: 100%;
-    transform: translateY(0px) scale(1);
+    transform: translateX(0px) scale(1);
   }
 }
