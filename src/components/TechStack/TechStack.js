@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./TechStack.css";
-import bs from "./bs.png";
+import bs from "./bootstrap.svg";
 import py from "./py.png";
 import html from "./html.png";
 import css from "./css.png";

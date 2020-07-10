@@ -12,7 +12,11 @@ export default function ContactPage() {
       <h2 className="contact-title">Contact me</h2>
       <ul>
         <li className="contact-list-item">
-          <img className="contact-list__icon" src={github} alt="GitHub"></img>
+          <img
+            className="contact-list__icon__gh"
+            src={github}
+            alt="GitHub"
+          ></img>
           <a href="https://github.com/jamesdebnam">My GitHub</a>
         </li>
         <li className="contact-list-item">
@@ -38,6 +42,20 @@ export default function ContactPage() {
           <p>07158290536</p>
         </li>
       </ul>
+      <p className="attribute">
+        Icons made by{" "}
+        <a
+          href="https://www.flaticon.com/authors/roundicons"
+          title="Roundicons"
+        >
+          Roundicons
+        </a>{" "}
+        from{" "}
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          {" "}
+          www.flaticon.com
+        </a>
+      </p>
     </div>
   );
 }

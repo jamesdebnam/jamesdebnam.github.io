@@ -2,6 +2,10 @@ h3 {
   margin: 0;
 }
 
+body {
+  background-image: url("/shattered-island.gif");
+}
+
 .content {
   position: absolute;
   text-align: center;
