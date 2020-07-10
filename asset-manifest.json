@@ -1,29 +1,37 @@
 {
   "files": {
-    "main.css": "/static/css/main.b6734a8b.chunk.css",
-    "main.js": "/static/js/main.4a8d8d51.chunk.js",
-    "main.js.map": "/static/js/main.4a8d8d51.chunk.js.map",
+    "main.css": "/static/css/main.a8bf6af2.chunk.css",
+    "main.js": "/static/js/main.a456c09b.chunk.js",
+    "main.js.map": "/static/js/main.a456c09b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fdaf22cd.js",
     "runtime-main.js.map": "/static/js/runtime-main.fdaf22cd.js.map",
     "static/js/2.5724d9bc.chunk.js": "/static/js/2.5724d9bc.chunk.js",
     "static/js/2.5724d9bc.chunk.js.map": "/static/js/2.5724d9bc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a507284e9c127a1f2379f0c7edafcfae.js": "/precache-manifest.a507284e9c127a1f2379f0c7edafcfae.js",
+    "precache-manifest.eeeecee0a49f819cd424a96816a8cdb8.js": "/precache-manifest.eeeecee0a49f819cd424a96816a8cdb8.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b6734a8b.chunk.css.map": "/static/css/main.b6734a8b.chunk.css.map",
+    "static/css/main.a8bf6af2.chunk.css.map": "/static/css/main.a8bf6af2.chunk.css.map",
     "static/js/2.5724d9bc.chunk.js.LICENSE.txt": "/static/js/2.5724d9bc.chunk.js.LICENSE.txt",
     "static/media/ProjectsPage.css": "/static/media/arrow-right.dc372a07.svg",
     "static/media/book-finder.png": "/static/media/book-finder.2fe0a354.png",
+    "static/media/bootstrap.svg": "/static/media/bootstrap.e0ba2ed1.svg",
     "static/media/calculator.png": "/static/media/calculator.b2acfc55.png",
     "static/media/chatty-time.png": "/static/media/chatty-time.77611963.png",
     "static/media/exchange.png": "/static/media/exchange.4643ffe0.png",
+    "static/media/gm.png": "/static/media/gm.e0a547e7.png",
+    "static/media/li.png": "/static/media/li.3b4d27bf.png",
     "static/media/metronome.png": "/static/media/metronome.065f8708.png",
+    "static/media/node.png": "/static/media/node.42d0423a.png",
+    "static/media/p.png": "/static/media/p.b0646266.png",
+    "static/media/py.png": "/static/media/py.067050f6.png",
+    "static/media/react.png": "/static/media/react.970c16a3.png",
+    "static/media/redux.png": "/static/media/redux.c8f44df3.png",
     "static/media/todos.png": "/static/media/todos.aa2bb775.png"
   },
   "entrypoints": [
     "static/js/runtime-main.fdaf22cd.js",
     "static/js/2.5724d9bc.chunk.js",
-    "static/css/main.b6734a8b.chunk.css",
-    "static/js/main.4a8d8d51.chunk.js"
+    "static/css/main.a8bf6af2.chunk.css",
+    "static/js/main.a456c09b.chunk.js"
   ]
 }
