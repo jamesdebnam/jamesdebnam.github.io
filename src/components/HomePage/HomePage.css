@@ -3,26 +3,146 @@ h3 {
 }
 
 body {
-  background-image: url("/shattered-island.gif");
+  background-image: url("/bg.svg");
+}
+.blob {
+  position: absolute;
+  left: 15%;
+  top: -50px;
+  z-index: 0;
+  fill: rgb(47, 76, 77);
+  animation: blobby 20s 1.3s linear infinite;
 }
 
+.blob2 {
+  animation: blobby-reverse 25s 1.3s linear infinite;
+}
+
+.blob3 {
+  animation: blobby 30s 1.3s linear infinite;
+}
+
+@keyframes blobby {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes blobby-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 .content {
   position: absolute;
   text-align: center;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5em;
-  background-color: #f1f3dc;
-  border-radius: 0.3vw;
+  top: 45%;
+  font-size: 1.5rem;
   padding: 2vw;
   width: 40vw;
+  transform: translateX(-50%);
   z-index: 2;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
-    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
-    0 8px 16px rgba(0, 0, 0, 0.11);
+}
+.home-page-img {
+  position: absolute;
+  width: 16rem;
+  border-radius: 50%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.42), 0 2px 2px rgba(0, 0, 0, 0.32),
+    0 4px 4px rgba(0, 0, 0, 0.22), 0 8px 8px rgba(0, 0, 0, 0.22),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+  border: 0.11em rgba(0, 0, 0, 0.6) solid;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  animation: img-in 1s 1s ease;
+  animation-fill-mode: backwards;
 }
 
+.content__title {
+  animation: title-in 0.5s 1s ease;
+  animation-fill-mode: backwards;
+}
+
+.content__subtitle {
+  animation: title-in 0.5s 1.3s ease;
+  animation-fill-mode: backwards;
+}
+
+.content__button {
+  animation: title-in 0.5s 1.6s ease;
+  animation-fill-mode: backwards;
+}
+
+.semi-circle__left,
+.semi-circle__right,
+.line-svg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+}
+
+.line-svg {
+  width: 350px;
+  height: 350px;
+}
+
+.semi-circle__left {
+  animation: right-in 1.5s 0.4s ease;
+  animation-fill-mode: backwards;
+}
+
+.semi-circle__right {
+  animation: left-in 1.5s 0.4s ease;
+  animation-fill-mode: backwards;
+}
+
+@keyframes right-in {
+  0% {
+    transform: translate(-26%, -26%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes left-in {
+  0% {
+    transform: translate(-74%, -74%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes title-in {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes img-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .background {
   background-color: rgba(60, 79, 104, 0.674);
   width: 100%;
@@ -37,5 +157,21 @@ body {
 @media only screen and (max-width: 768px) {
   .content {
     width: 80vw;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.42), 0 2px 2px rgba(0, 0, 0, 0.32),
+      0 4px 4px rgba(0, 0, 0, 0.22), 0 8px 8px rgba(0, 0, 0, 0.22),
+      0 16px 16px rgba(0, 0, 0, 0.12);
+    background-color: antiquewhite;
+    border-radius: 0.7rem;
+  }
+  .home-page-img {
+    width: 14rem;
+    top: 14%;
+  }
+
+  .semi-circle__left,
+  .semi-circle__right,
+  .line-svg,
+  .blob {
+    display: none;
   }
 }

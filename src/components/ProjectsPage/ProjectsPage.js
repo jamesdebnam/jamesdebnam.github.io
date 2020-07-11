@@ -60,7 +60,7 @@ export default function ProjectsPage() {
   const [tech, setTech] = useState("");
 
   return (
-    <>
+    <div className="project-page">
       <TechStack setTech={setTech} tech={tech} />
       <div className="projects">
         {projects.map(
@@ -83,6 +83,6 @@ export default function ProjectsPage() {
           }
         )}
       </div>
-    </>
+    </div>
   );
 }
