@@ -3,7 +3,9 @@ h3 {
 }
 
 body {
-  background-image: url("/bg.svg");
+  background: url("/bg.svg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgb(139, 184, 184);
 }
 .blob {
   position: absolute;
