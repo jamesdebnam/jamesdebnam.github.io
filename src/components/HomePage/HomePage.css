@@ -9,17 +9,18 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 0;
   fill: rgb(47, 76, 77);
-  animation: blobby 20s 1.3s linear infinite;
+  animation: blobby 40s 1.3s linear infinite;
 }
 
 .blob2 {
-  animation: blobby-reverse 25s 1.3s linear infinite;
+  animation: blobby-reverse 45s 1.3s linear infinite;
 }
 
 .blob3 {
-  animation: blobby 30s 1.3s linear infinite;
+  animation: blobby 55s 1.3s linear infinite;
 }
 
 @keyframes blobby {
