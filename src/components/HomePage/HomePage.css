@@ -7,8 +7,8 @@ body {
 }
 .blob {
   position: absolute;
-  left: 15vw;
-  top: -50px;
+  left: 50%;
+  top: 50%;
   z-index: 0;
   fill: rgb(47, 76, 77);
   animation: blobby 20s 1.3s linear infinite;
@@ -24,25 +24,25 @@ body {
 
 @keyframes blobby {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 @keyframes blobby-reverse {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    transform: rotate(-360deg);
+    transform: translate(-50%, -50%) rotate(-360deg);
   }
 }
 .content {
   position: absolute;
   text-align: center;
   left: 50%;
-  top: 45%;
+  top: 50%;
   font-size: 1.5rem;
   padding: 2vw;
   width: 40vw;
@@ -58,9 +58,9 @@ body {
     0 16px 16px rgba(0, 0, 0, 0.12);
   border: 0.11em rgba(0, 0, 0, 0.6) solid;
   background-color: rgba(0, 0, 0, 0.6);
-  top: 16%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -110%);
   z-index: 3;
   animation: img-in 1s 1s ease;
   animation-fill-mode: backwards;
@@ -74,6 +74,7 @@ body {
 .content__subtitle {
   animation: title-in 0.5s 1.3s ease;
   animation-fill-mode: backwards;
+  margin: 8px;
 }
 
 .content__button {
@@ -173,5 +174,14 @@ body {
   .line-svg,
   .blob {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 2800px) {
+  * {
+    font-size: 25px;
+  }
+  .content {
+    top: 47%;
   }
 }

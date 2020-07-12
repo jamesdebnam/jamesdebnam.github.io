@@ -18,7 +18,7 @@ export default function TechStack({ tech, setTech }) {
 
   return (
     <>
-      <h3 className="tech-title">Filter by Tech</h3>
+      <h3 className="tech-title">Click Icon to filter by Tech</h3>
       <div className="tech-stack">
         <img
           onClick={() => (tech !== "JS" ? setTech("JS") : setTech(""))}
