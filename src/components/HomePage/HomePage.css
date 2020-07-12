@@ -11,7 +11,7 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;
-  fill: rgb(47, 76, 77);
+  fill: #3e344e;
   animation: blobby 40s 1.3s linear infinite;
 }
 
@@ -162,12 +162,12 @@ body {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.42), 0 2px 2px rgba(0, 0, 0, 0.32),
       0 4px 4px rgba(0, 0, 0, 0.22), 0 8px 8px rgba(0, 0, 0, 0.22),
       0 16px 16px rgba(0, 0, 0, 0.12);
-    background-color: antiquewhite;
+    background-color: #f1f3dc;
     border-radius: 0.7rem;
+    padding: 2rem;
   }
   .home-page-img {
     width: 14rem;
-    top: 14%;
   }
 
   .semi-circle__left,

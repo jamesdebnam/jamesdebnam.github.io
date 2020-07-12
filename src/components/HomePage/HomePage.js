@@ -24,12 +24,12 @@ export default function HomePage({ setActivePage }) {
       </div>
       <svg className="semi-circle__left" width="500" height="500">
         <g transform="rotate(225 250 250)">
-          <path d="M0,250 a1,1 0 0,0 500,0" fill="white" />
+          <path d="M0,250 a1,1 0 0,0 500,0" fill="#f1f3dc" />
         </g>{" "}
       </svg>
       <svg className="semi-circle__right" width="500" height="500">
         <g transform="rotate(45 250 250)">
-          <path d="M0,250 a1,1 0 0,0 500,0" fill="white" />
+          <path d="M0,250 a1,1 0 0,0 500,0" fill="#f1f3dc" />
         </g>
       </svg>
       <svg className="line-svg" width="600px" height="600px">
@@ -38,7 +38,7 @@ export default function HomePage({ setActivePage }) {
           y1="600"
           x2="0"
           y2="0"
-          stroke="white"
+          stroke="#f1f3dc"
           stroke-width="2px"
         />
       </svg>
